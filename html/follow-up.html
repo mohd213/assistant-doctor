@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Site keywords here">
+    <meta name="description" content="">
+    <meta name='copyright' content=''>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title -->
+    <title>المساعد الطبي</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../img/logo.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/icofont.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <!-- Medipro CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-outter"></div>
+            <div class="loader-inner"></div>
+            <div class="indicator">
+                <svg width="16px" height="12px">
+                    <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+    <!-- Header Area -->
+    <header class="header">
+        <!-- Header Inner -->
+        <div class="header-inner">
+            <div class="logo d-flex align-items-center justify-content-start">
+                <div class="logo-img">
+                    <img src="../img/logo.png" alt="">
+                </div>
+                <p class="mb-0">
+                    المساعد الطبي
+                </p>
+            </div>
+            <div class="main-menu">
+                <ul class="nav menu">
+                    <li><a href="../index.html">الصفحة الرئيسية</a></li>
+                    <li><a href="#"><i class="icofont-ui-user ml-3"></i> حسابي <i
+                                class="icofont-rounded-down mr-2"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="./home.html">الملف الشخصي</a></li>
+                            <li><a href="./login/login.html">تسجيل الخروج</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="notification-list">
+                        <a href="#"><i class="icofont-notification"></i></a>
+                        <ul class="dropdown">
+                            <p>لا توجد اشعارات</p>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--/ End Header Inner -->
+    </header>
+    <!-- End Header Area -->
+    <!-- page content -->
+    <div class="page-content">
+        <!-- right side include menu for move between website pages -->
+        <div class="right-side">
+            <div class="avatar d-flex justify-content-start align-items-center">
+                <div class="img ml-3">
+                    <img src="../img/author2.jpg" alt="">
+                </div>
+                <div class="name">
+                    <span>أحمد محمد</span>
+                </div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="./home.html"> <i class="icofont-doctor"></i>الملف الشخصي</a></li>
+                    <li><a href="./blogs.html"><i class="icofont-file-alt"></i>مدوناتي</a></li>
+                    <li><a href="./operations.html"><i class="icofont-calendar"></i>جدول العمليات</a></li>
+                    <li><a href="./patient.html"><i class="icofont-patient-bed"></i>تشخيص المريض</a></li>
+                    <li><a href="./follow-up.html" class="active"><i class="icofont-prescription"></i>حالات المتابعة</a>
+                    </li>
+                    <li><a href="./contact.html"><i class="icofont-gears"></i>الدعم الفني</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- left side include page content -->
+        <div class="left-side">
+            <!-- page header -->
+            <div class="d-flex justify-content-between mb-5">
+                <h3 class="title mb-0">حالات المتابعة</h3>
+                <a href="./add-case.html">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#searchOperation">
+                        إضافة
+                    </button>
+                </a>
+            </div>
+            <!-- patient cases -->
+            <div class="patient-cases">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <p class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <span class="ml-2">حالة: </span>
+                                    أحمد محمد
+                                </p>
+                                <div class="edit-icon">
+                                    <a href="./add-case.html"><i class="icofont-ui-edit"></i></a>
+                                </div>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <p><span>الاسم رباعي: </span>أحمد سعيد مصطفى محمد</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>العمر: </span> 19</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>الجنس: </span> ذكر</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>المرض الذي يعاني منه: </span> حصوات في الكلى</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>الدواء المستخدم: </span> بنسلين</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>العملية إن توفر: </span> لا يوجد</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>نسبة التشافي: </span> 60%</p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <p><span>ملاحظات الطبيب: </span> م بميبينتثخهقهثق ثقهقه ثههث هقهقه ثهقثهق
+                                            ثقهثهق قهثقه هثقهينم تنيبينبت مينبتينبم يمنبتيبنت مينبتينبمت م يبيب
+                                            يبمنتبنيب منبتيبنيتب م بميبينتثخهقهثق ثقهقه ثههث هقهقه ثهقثهق ثقهثهق
+                                            قهثقه هثقهثق</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <p class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                    aria-controls="collapseTwo">
+                                    <span class="ml-2">حالة: </span>
+                                    أحمد محمد
+                                </p>
+                                <div class="edit-icon">
+                                    <a href="./add-case.html"><i class="icofont-ui-edit"></i></a>
+                                </div>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <p><span>الاسم رباعي: </span>أحمد سعيد مصطفى محمد</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>العمر: </span> 19</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>الجنس: </span> ذكر</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>المرض الذي يعاني منه: </span> حصوات في الكلى</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>الدواء المستخدم: </span> بنسلين</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>العملية إن توفر: </span> لا يوجد</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>نسبة التشافي: </span> 60%</p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <p><span>ملاحظات الطبيب: </span> م بميبينتثخهقهثق ثقهقه ثههث هقهقه ثهقثهق
+                                            ثقهثهق قهثقه هثقهينم تنيبينبت مينبتينبم يمنبتيبنت مينبتينبمت م يبيب
+                                            يبمنتبنيب منبتيبنيتب م بميبينتثخهقهثق ثقهقه ثههث هقهقه ثهقثهق ثقهثهق
+                                            قهثقه هثقهثق</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <p class="mb-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                                    aria-controls="collapseThree">
+                                    <span class="ml-2">حالة: </span>
+                                    أحمد محمد
+                                </p>
+                                <div class="edit-icon">
+                                    <a href="./add-case.html"><i class="icofont-ui-edit"></i></a>
+                                </div>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <p><span>الاسم رباعي: </span>أحمد سعيد مصطفى محمد</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>العمر: </span> 19</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>الجنس: </span> ذكر</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>المرض الذي يعاني منه: </span> حصوات في الكلى</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>الدواء المستخدم: </span> بنسلين</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>العملية إن توفر: </span> لا يوجد</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>نسبة التشافي: </span> 60%</p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <p><span>ملاحظات الطبيب: </span> م بميبينتثخهقهثق ثقهقه ثههث هقهقه ثهقثهق
+                                            ثقهثهق قهثقه هثقهينم تنيبينبت مينبتينبم يمنبتيبنت مينبتينبمت م يبيب
+                                            يبمنتبنيب منبتيبنيتب م بميبينتثخهقهثق ثقهقه ثههث هقهقه ثهقثهق ثقهثهق
+                                            قهثقه هثقهثق</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                                <p class="mb-0" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+                                    aria-controls="collapseFour">
+                                    <span class="ml-2">حالة: </span>
+                                    أحمد محمد
+                                </p>
+                                <div class="edit-icon">
+                                    <a href="./add-case.html"><i class="icofont-ui-edit"></i></a>
+                                </div>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <p><span>الاسم رباعي: </span>أحمد سعيد مصطفى محمد</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>العمر: </span> 19</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>الجنس: </span> ذكر</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>المرض الذي يعاني منه: </span> حصوات في الكلى</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>الدواء المستخدم: </span> بنسلين</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>العملية إن توفر: </span> لا يوجد</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>نسبة التشافي: </span> 60%</p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <p><span>ملاحظات الطبيب: </span> م بميبينتثخهقهثق ثقهقه ثههث هقهقه ثهقثهق
+                                            ثقهثهق قهثقه هثقهينم تنيبينبت مينبتينبم يمنبتيبنت مينبتينبمت م يبيب
+                                            يبمنتبنيب منبتيبنيتب م بميبينتثخهقهثق ثقهقه ثههث هقهقه ثهقثهق ثقهثهق
+                                            قهثقه هثقهثق</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-0">
+                                <p class="mb-0" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
+                                    aria-controls="collapseFive">
+                                    <span class="ml-2">حالة: </span>
+                                    أحمد محمد
+                                </p>
+                                <div class="edit-icon">
+                                    <a href="./add-case.html"><i class="icofont-ui-edit"></i></a>
+                                </div>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <p><span>الاسم رباعي: </span>أحمد سعيد مصطفى محمد</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>العمر: </span> 19</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>الجنس: </span> ذكر</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>المرض الذي يعاني منه: </span> حصوات في الكلى</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>الدواء المستخدم: </span> بنسلين</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>العملية إن توفر: </span> لا يوجد</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>نسبة التشافي: </span> 60%</p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <p><span>ملاحظات الطبيب: </span> م بميبينتثخهقهثق ثقهقه ثههث هقهقه ثهقثهق
+                                            ثقهثهق قهثقه هثقهينم تنيبينبت مينبتينبم يمنبتيبنت مينبتينبمت م يبيب
+                                            يبمنتبنيب منبتيبنيتب م بميبينتثخهقهثق ثقهقه ثههث هقهقه ثهقثهق ثقهثهق
+                                            قهثقه هثقهثق</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h5 class="mb-0">
+                                <p class="mb-0" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true"
+                                    aria-controls="collapseSix">
+                                    <span class="ml-2">حالة: </span>
+                                    أحمد محمد
+                                </p>
+                                <div class="edit-icon">
+                                    <a href="./add-case.html"><i class="icofont-ui-edit"></i></a>
+                                </div>
+                            </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <p><span>الاسم رباعي: </span>أحمد سعيد مصطفى محمد</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>العمر: </span> 19</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>الجنس: </span> ذكر</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>المرض الذي يعاني منه: </span> حصوات في الكلى</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>الدواء المستخدم: </span> بنسلين</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>العملية إن توفر: </span> لا يوجد</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p><span>نسبة التشافي: </span> 60%</p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <p><span>ملاحظات الطبيب: </span> م بميبينتثخهقهثق ثقهقه ثههث هقهقه ثهقثهق
+                                            ثقهثهق قهثقه هثقهينم تنيبينبت مينبتينبم يمنبتيبنت مينبتينبمت م يبيب
+                                            يبمنتبنيب منبتيبنيتب م بميبينتثخهقهثق ثقهقه ثههث هقهقه ثهقثهق ثقهثهق
+                                            قهثقه هثقهثق</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End page content  -->
+    <!-- jquery Min JS -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Main JS -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

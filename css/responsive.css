@@ -1,0 +1,15 @@
+/* Mobile and Tablet Screen */
+@media only screen and (max-width: 991px) {
+    .content{
+        height: auto;
+        padding: 0 30px;
+        padding-top: 90px;
+    }
+    .blue-side-login {
+        display: none;
+    }
+    .white-side-login {
+        width: 100%;
+        padding: 30px;
+    }
+}

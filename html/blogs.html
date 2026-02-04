@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Site keywords here">
+    <meta name="description" content="">
+    <meta name='copyright' content=''>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title -->
+    <title>المساعد الطبي</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../img/logo.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/datepicker.css">
+    <link rel="stylesheet" href="../css/nice-select.css">
+    <link rel="stylesheet" href="../css/icofont.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <!-- Medipro CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-outter"></div>
+            <div class="loader-inner"></div>
+            <div class="indicator">
+                <svg width="16px" height="12px">
+                    <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+    <!-- Header Area -->
+    <header class="header">
+        <!-- Header Inner -->
+        <div class="header-inner">
+            <div class="logo d-flex align-items-center justify-content-start">
+                <div class="logo-img">
+                    <img src="../img/logo.png" alt="">
+                </div>
+                <p class="mb-0">
+                    المساعد الطبي
+                </p>
+            </div>
+            <div class="main-menu">
+                <ul class="nav menu">
+                    <li><a href="../index.html">الصفحة الرئيسية</a></li>
+                    <li><a href="#"><i class="icofont-ui-user ml-3"></i> حسابي <i
+                                class="icofont-rounded-down mr-2"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="./home.html">الملف الشخصي</a></li>
+                            <li><a href="./login/login.html">تسجيل الخروج</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="notification-list">
+                        <a href="#"><i class="icofont-notification"></i></a>
+                        <ul class="dropdown">
+                            <p>لا توجد اشعارات</p>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--/ End Header Inner -->
+    </header>
+    <!-- End Header Area -->
+    <!-- page content -->
+    <div class="page-content">
+        <!-- right side include menu for move between website pages -->
+        <div class="right-side">
+            <div class="avatar d-flex justify-content-start align-items-center">
+                <div class="img ml-3">
+                    <img src="../img/author2.jpg" alt="">
+                </div>
+                <div class="name">
+                    <span>أحمد محمد</span>
+                </div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="./home.html"> <i class="icofont-doctor"></i>الملف الشخصي</a></li>
+                    <li><a href="./blogs.html" class="active"><i class="icofont-file-alt"></i>مدوناتي</a></li>
+                    <li><a href="./operations.html"><i class="icofont-calendar"></i>جدول العمليات</a></li>
+                    <li><a href="./patient.html"><i class="icofont-patient-bed"></i>تشخيص المريض</a></li>
+                    <li><a href="./follow-up.html"><i class="icofont-prescription"></i>حالات المتابعة</a></li>
+                    <li><a href="./contact.html"><i class="icofont-gears"></i>الدعم الفني</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- left side include page content -->
+        <div class="left-side-blogs">
+            <div class="blogs">
+                <!-- add new blog -->
+                <div class="add-blog mb-4">
+                    <form id="post-form">
+                        <div class="mb-3">
+                            <label for="post-image">عنوان المقال:</label>
+                            <input type="text" name="post-header">
+                        </div>
+                        <div class="mb-3">
+                            <label for="post-text">محتوى المقال:</label>
+                            <textarea id="post-text" name="post-text"></textarea>
+                        </div>
+                        <div class="file-upload mb-3">
+                            <input type="file" id="photo-upload" name="photo-upload" accept="image/*">
+                            <label for="photo-upload">إرفاق صورة</label>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn">نشر</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- show my blogs -->
+                <div class="my-blogs">
+                    <a href="#">
+                        <div class="blog">
+                            <div class="blog-header d-flex align-items-center justify-content-space-between mb-4">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <div class="img ml-3">
+                                        <img src="../img/author2.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h5>أحمد محمد</h5>
+                                        <span>
+                                            20 أغسطس 2022
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-body">
+                                <h4>فقر الدم لدى الأطفال</h4>
+                                <img src="../img/img3.jpg" alt="">
+                                <p>فقر الدم هو حالة لا يحتوي فيها الدم على ما يكفي من كرات الدم الحمراء السليمة لحمل
+                                    كمية الأكسجين الكافية إلى أنسجة الجسم. قد يجعلك فقر الدم -المعروف أيضًا بانخفاض
+                                    مستوى الهيموغلوبين- تحس بالإرهاق والوهن.
+
+                                    هناك عدة أنواع من فقر الدم، ولكل منها سببه الخاص. فقد يكون فقر الدم مؤقتًا أو طويل
+                                    الأجل، وقد يتدرّج من البسيط إلى الحاد. غالبًا ما يحدث فقر الدم لأكثر من سبب واحد.
+                                    راجع طبيبك إذا شككت في إصابتك بفقر الدم. فربما يكون علامة على وجود مرض خطير.
+
+                                    تتنوع علاجات فقر الدم -التي تعتمد على سبب الإصابة به- بين تناول المكملات الغذائية
+                                    والخضوع لإجراءات طبية. ويمكنك الوقاية من بعض أنواع فقر الدم عن طريق اتباع نظام غذائي
+                                    صحي ومتنوع.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="blog">
+                            <div class="blog-header d-flex align-items-center justify-content-space-between mb-4">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <div class="img ml-3">
+                                        <img src="../img/author2.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h5>أحمد محمد</h5>
+                                        <span>
+                                            20 أغسطس 2022
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-body">
+                                <h4>فقر الدم لدى الأطفال</h4>
+                                <p>فقر الدم هو حالة لا يحتوي فيها الدم على ما يكفي من كرات الدم الحمراء السليمة لحمل
+                                    كمية الأكسجين الكافية إلى أنسجة الجسم. قد يجعلك فقر الدم -المعروف أيضًا بانخفاض
+                                    مستوى الهيموغلوبين- تحس بالإرهاق والوهن.
+
+                                    هناك عدة أنواع من فقر الدم، ولكل منها سببه الخاص. فقد يكون فقر الدم مؤقتًا أو طويل
+                                    الأجل، وقد يتدرّج من البسيط إلى الحاد. غالبًا ما يحدث فقر الدم لأكثر من سبب واحد.
+                                    راجع طبيبك إذا شككت في إصابتك بفقر الدم. فربما يكون علامة على وجود مرض خطير.
+
+                                    تتنوع علاجات فقر الدم -التي تعتمد على سبب الإصابة به- بين تناول المكملات الغذائية
+                                    والخضوع لإجراءات طبية. ويمكنك الوقاية من بعض أنواع فقر الدم عن طريق اتباع نظام غذائي
+                                    صحي ومتنوع.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="blog">
+                            <div class="blog-header d-flex align-items-center justify-content-space-between mb-4">
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <div class="img ml-3">
+                                        <img src="../img/author2.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h5>أحمد محمد</h5>
+                                        <span>
+                                            20 أغسطس 2022
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-body">
+                                <h4>فقر الدم لدى الأطفال</h4>
+                                <p>فقر الدم هو حالة لا يحتوي فيها الدم على ما يكفي من كرات الدم الحمراء السليمة لحمل
+                                    كمية الأكسجين الكافية إلى أنسجة الجسم. قد يجعلك فقر الدم -المعروف أيضًا بانخفاض
+                                    مستوى الهيموغلوبين- تحس بالإرهاق والوهن.
+
+                                    هناك عدة أنواع من فقر الدم، ولكل منها سببه الخاص. فقد يكون فقر الدم مؤقتًا أو طويل
+                                    الأجل، وقد يتدرّج من البسيط إلى الحاد. غالبًا ما يحدث فقر الدم لأكثر من سبب واحد.
+                                    راجع طبيبك إذا شككت في إصابتك بفقر الدم. فربما يكون علامة على وجود مرض خطير.
+
+                                    تتنوع علاجات فقر الدم -التي تعتمد على سبب الإصابة به- بين تناول المكملات الغذائية
+                                    والخضوع لإجراءات طبية. ويمكنك الوقاية من بعض أنواع فقر الدم عن طريق اتباع نظام غذائي
+                                    صحي ومتنوع.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <!-- show other blogs -->
+            <div class="other-blogs">
+                <h5>بعض المقالات الأخرى</h5>
+                <a href="#">
+                    <div class="blog">
+                        <div class="blog-header d-flex align-items-center justify-content-space-between mb-4">
+                            <div class="d-flex align-items-center justify-content-start">
+                                <div class="img ml-3">
+                                    <img src="../img/author2.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h5>أحمد محمد</h5>
+                                    <span>
+                                        20 أغسطس 2022
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-body">
+                            <h4>فقر الدم لدى الأطفال</h4>
+                            <img src="../img/img3.jpg" alt="">
+                            <p>فقر الدم هو حالة لا يحتوي فيها الدم على ما يكفي من كرات الدم الحمراء السليمة لحمل
+                                كمية الأكسجين الكافية إلى أنسجة الجسم. قد يجعلك فقر الدم -المعروف أيضًا بانخفاض
+                                مستوى الهيموغلوبين- تحس بالإرهاق والوهن.
+
+                                هناك عدة أنواع من فقر الدم، ولكل منها سببه الخاص. فقد يكون فقر الدم مؤقتًا أو طويل
+                                الأجل، وقد يتدرّج من البسيط إلى الحاد. غالبًا ما يحدث فقر الدم لأكثر من سبب واحد.
+                                راجع طبيبك إذا شككت في إصابتك بفقر الدم. فربما يكون علامة على وجود مرض خطير.
+
+                                تتنوع علاجات فقر الدم -التي تعتمد على سبب الإصابة به- بين تناول المكملات الغذائية
+                                والخضوع لإجراءات طبية. ويمكنك الوقاية من بعض أنواع فقر الدم عن طريق اتباع نظام غذائي
+                                صحي ومتنوع.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="blog">
+                        <div class="blog-header d-flex align-items-center justify-content-space-between mb-4">
+                            <div class="d-flex align-items-center justify-content-start">
+                                <div class="img ml-3">
+                                    <img src="../img/author2.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h5>أحمد محمد</h5>
+                                    <span>
+                                        20 أغسطس 2022
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-body">
+                            <h4>فقر الدم لدى الأطفال</h4>
+                            <img src="../img/img3.jpg" alt="">
+                            <p>فقر الدم هو حالة لا يحتوي فيها الدم على ما يكفي من كرات الدم الحمراء السليمة لحمل
+                                كمية الأكسجين الكافية إلى أنسجة الجسم. قد يجعلك فقر الدم -المعروف أيضًا بانخفاض
+                                مستوى الهيموغلوبين- تحس بالإرهاق والوهن.
+
+                                هناك عدة أنواع من فقر الدم، ولكل منها سببه الخاص. فقد يكون فقر الدم مؤقتًا أو طويل
+                                الأجل، وقد يتدرّج من البسيط إلى الحاد. غالبًا ما يحدث فقر الدم لأكثر من سبب واحد.
+                                راجع طبيبك إذا شككت في إصابتك بفقر الدم. فربما يكون علامة على وجود مرض خطير.
+
+                                تتنوع علاجات فقر الدم -التي تعتمد على سبب الإصابة به- بين تناول المكملات الغذائية
+                                والخضوع لإجراءات طبية. ويمكنك الوقاية من بعض أنواع فقر الدم عن طريق اتباع نظام غذائي
+                                صحي ومتنوع.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End page content  -->
+    <!-- jquery Min JS -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap-datepicker.js"></script>
+    <script src="../js/niceselect.js"></script>
+    <!-- Main JS -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
