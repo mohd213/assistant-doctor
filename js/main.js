@@ -7,9 +7,13 @@ $(document).ready(function () {
 		$("#datepicker").datepicker();
 	});
 
+	// AI Diagnosis - تحديث الدالة لتعمل مع الكود الجديد
 	$('.check-ai').click(function () {
-		$('.result-of-check').show()
+		$('.result-of-check').show();
+		// تحويل المستخدم لصفحة التشخيص الذكي الجديدة
+		window.location.href = './html/ai-diagnosis.html';
 	});
+	
 	$('#photo-upload').change(function (event) {
 		var fileName = $(this).val().split('\\').pop();
 		$(this).siblings('label').text(fileName);
@@ -43,6 +47,3 @@ $(document).ready(function () {
 $(window).on('load', function () {
 	$('.preloader').addClass('preloader-deactivate');
 });
-
-
-
