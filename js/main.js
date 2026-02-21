@@ -44,6 +44,17 @@ $(document).ready(function () {
 /*====================
 	Preloader JS
 ======================*/
+// إخفاء شاشة التحميل فوراً عند تحميل الصفحة
+$('.preloader').addClass('preloader-deactivate');
+
+// تأمين إضافي: إخفاء بعد ثانية واحدة في حال لم يعمل الكود أعلاه
+setTimeout(function() {
+	if ($('.preloader').is(':visible')) {
+		$('.preloader').addClass('preloader-deactivate');
+	}
+}, 1000);
+
+// التأكد من إخفاء preloader عند اكتمال تحميل الصفحة بالكامل
 $(window).on('load', function () {
 	$('.preloader').addClass('preloader-deactivate');
 });
